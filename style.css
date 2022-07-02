@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+body {
+    font-family: sans-serif;
+    background-color: #eeeeee;
+    background-image: url('sns/Background_Image.png');
+    background-repeat: y-repeat;
+    background-position: center center;
+  }
+  
+  .file-upload {
+    background-color: #ffffff;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .file-upload-btn {
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    background: #03f775;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #04ff81;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .file-upload-btn:hover {
+    background: #00ff77;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+  
+  .file-upload-btn:active {
+    border: 0;
+    transition: all .2s ease;
+  }
+  
+  .file-upload-content {
+    display: none;
+    text-align: center;
+  }
+  
+  .file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .image-upload-wrap {
+    margin-top: 20px;
+    border: 4px dashed #00ff77;
+    position: relative;
+  }
+  
+  .image-dropping,
+  .image-upload-wrap:hover {
+    background-color: #00ff77;
+    border: 4px dashed #ffffff;
+  }
+  
+  .image-title-wrap {
+    padding: 0 15px 15px 15px;
+    color: rgb(93, 37, 37);
+  }
+  
+  .drag-text {
+    text-align: center;
+  }
+  
+  .drag-text h3 {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #00ff80;
+    padding: 60px 0;
+  }
+  
+  .file-upload-image {
+    max-height: 200px;
+    max-width: 200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .remove-image {
+    width: 200px;
+    margin: 0;
+    color: #fff;
+    background: #e9412e;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #a16c66;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .remove-image:hover {
+    background: #51130b;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+  
+  .remove-image:active {
+    border: 0;
+    transition: all .2s ease;
+  }
+  /*CSS Upgrade*/
+  .wrapper{
+    width: 100vw;
+    margin: 0 auto;
+  }
+  .head-part{
+    width: 800px;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .btn-start{
+    background-color: skyblue;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 2rem;
+    border-radius: 10px;
+    margin-right: 30px;
+    font-weight: bold;
+  }
+  .btn-start:hover{
+    background-color: rgb(70, 177, 219);
+    color: rgb(0, 0, 0);
+  }
+  #label-container{
+    width: 300px;
+    margin: auto auto;
+    font-size: 1.2rem;
+  }
+  #restartBtn-container{
+    width: 250px;
+    margin: auto;
+  }
+  #spinner{
+    display: none;
+  }
+  #bar-graph{
+    width: 500px;
+    margin: 20px auto;
+    /*코드추가*/
+    background-color: white;
+    padding: 15px;
+    display: none;
+  }
+  #bar-graph .progress{
+    margin-bottom: 1rem;
+    height: 2rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+#bar-graph > h3 { /*코드추가*/
+  text-align: center;
+}
+  #title {
+      color: yellow;
+      font-family: 'Black Han Sans', sans-serif;
+      font-size: 5rem;
+      text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+  }
+  #class1-title {
+    color: red;
+    font-size: 1.5rem;
+    text-shadow: 0.1rem 0 red;
+    text-shadow: -1.5px 0 white, 0 1.5px white, 1.5px 0 white, 0 -1.5px white;
+  }
+  #class2-title {
+    color: blue;
+    font-size: 1.5rem;
+    text-shadow: 0.1rem 0 blue;
+    text-shadow: -1.5px 0 white, 0 1.5px white, 1.5px 0 white, 0 -1.5px white;
+  }
+  #class3-title {
+    color: #FFC838;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0.1rem 0 #FFC338;
+    text-shadow: -1.5px 0 white, 0 1.5px white, 1.5px 0 white, 0 -1.5px white;
+  }
+  #class4-title {
+    color: skyblue;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0.1rem 0 skyblue;
+    text-shadow: -1.5px 0 white, 0 1.5px white, 1.5px 0 white, 0 -1.5px white;
+  }
+  #class5-title {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0.1rem 0 black;
+    text-shadow: -1.5px 0 white, 0 1.5px white, 1.5px 0 white, 0 -1.5px white;
+  }
+  #class6-title {
+    color: green;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0.1rem 0 green;
+    text-shadow: -1.5px 0 white, 0 1.5px white, 1.5px 0 white, 0 -1.5px white;
+  }
+  #class7-title {
+    color: lime;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0.1rem 0 lime;
+    text-shadow: -1.5px 0 white, 0 1.5px white, 1.5px 0 white, 0 -1.5px white;
+  }
+  #class8-title {
+    color: orangered;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0.1rem 0 orangered;
+    text-shadow: -1.5px 0 white, 0 1.5px white, 1.5px 0 white, 0 -1.5px white;
+  }
+  #class9-title {
+    color: yellow;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0.1rem 0 yellow;
+    text-shadow: -1.5px 0 white, 0 1.5px white, 1.5px 0 white, 0 -1.5px white;
+  }
+  #class10-title {
+    color: limegreen;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0.1rem 0 limegreen;
+    text-shadow: -1.5px 0 white, 0 1.5px white, 1.5px 0 white, 0 -1.5px white;
+  }
+  #class11-title {
+    color: darkblue;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0.1rem 0 darkblue;
+    text-shadow: -1.5px 0 white, 0 1.5px white, 1.5px 0 white, 0 -1.5px white;
+  }
+  #menual {
+    font-family: 'Nanum Gothic Coding', monospace;
+    /* 코드수정 */
+    border: 6px solid gray;
+    border-radius: 10px;
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 15px;
+    
+  }
+  #menual-start {
+    font-size: 2.5rem;
+    color: red;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+  #menual1 {
+    font-size: 1.5rem;
+    color: orange;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+  #menual2 {
+    font-size: 1.5rem;
+    color: yellow;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+  #menual3 {
+    font-size: 1.5rem;
+    color: lime;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+  #menual4 {
+    font-size: 1.5rem;
+    color: skyblue;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+  #footer {
+    background-color: yellow;
+    margin: 0 auto;
+    margin-top: 299px;
+    padding: 0 30%;
+    color: rgb(99, 168, 196);
+    width: 100vw;
+    text-align: center;
+  }
+  #t1 {
+    color: red;
+  }
+  #t2 {
+    color: orange;
+  }
+  #t3 {
+    color: yellow;
+  }
+  #t4 {
+    color: lime;
+  }
+  #t5 {
+    color: green;
+  }
+  #t6 {
+    color: skyblue;
+  }
+  #t7 {
+    color: blue;
+  }
+  #t8 {
+    color: purple;
+  }
